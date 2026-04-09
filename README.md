@@ -7,7 +7,14 @@
 ```
 agent-anomaly-detector/
 ├── SKILL.md                    # Skill 主文档（OpenClaw 加载）
-├── README.md                   # 项目主文档
+├── README.md                   # 项目主文档（本文档）
+├── LICENSE                     # MIT 许可证
+├── CONTRIBUTING.md             # 贡献指南
+├── .gitignore                  # Git 忽略文件配置
+├── .gitignore.simple           # 简化版 Git 忽略文件
+├── requirements.txt            # Python 依赖列表
+├── setup.py                    # Python 包安装脚本
+├── pyproject.toml              # 现代 Python 项目配置
 ├── scripts/
 │   ├── detect_anomaly.py       # 主检测脚本
 │   ├── openclaw_integration_fixed.py # OpenClaw集成脚本
@@ -26,7 +33,8 @@ agent-anomaly-detector/
 ├── tests/
 │   ├── test_session.json       # 测试数据
 │   ├── test_anomaly_detection.py # 完整测试脚本
-│   └── simple_test.py          # 简单测试脚本
+│   ├── simple_test.py          # 简单测试脚本
+│   └── test_session_scripts.json # 脚本测试数据
 ├── utils/
 │   ├── run_detection.bat       # 主运行脚本
 │   ├── run_openclaw_detection.bat # OpenClaw检测脚本
@@ -276,9 +284,66 @@ ANOMALY_TIMEOUT=120
 - 在批处理文件中添加 `chcp 65001`
 - 使用 `check_python.ps1` 检查环境
 
+## 📦 项目配置文件
+
+### 新创建的文件说明
+
+1. **`.gitignore`** - Git 忽略文件配置
+   - 排除 Python 缓存文件、环境变量、IDE 配置等
+   - 提供完整版和简化版 (`.gitignore.simple`)
+
+2. **`LICENSE`** - MIT 开源许可证
+   - 允许自由使用、修改和分发代码
+   - 需要保留版权声明
+
+3. **`CONTRIBUTING.md`** - 贡献指南
+   - 说明如何报告问题、提交代码
+   - 开发环境设置指南
+   - 代码规范和测试要求
+
+4. **`requirements.txt`** - Python 依赖列表
+   - 核心依赖：`requests`, `python-dotenv`
+   - 可选开发依赖
+
+5. **`setup.py`** - Python 包安装脚本
+   - 支持 `pip install -e .` 安装
+   - 定义包元数据和入口点
+
+6. **`pyproject.toml`** - 现代 Python 项目配置
+   - 符合 PEP 518 标准
+   - 包含构建系统、项目元数据、工具配置
+
+### 安装和使用
+
+```bash
+# 克隆仓库
+git clone https://github.com/yourusername/agent-anomaly-detector.git
+cd agent-anomaly-detector
+
+# 安装依赖
+pip install -e .
+
+# 或安装开发版本（包含测试工具）
+pip install -e ".[dev]"
+
+# 运行检测
+detect-anomaly --help
+```
+
+## 🤝 贡献
+
+欢迎贡献代码！请阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何参与。
+
+## 📄 许可证
+
+本项目基于 MIT 许可证开源。详见 [LICENSE](LICENSE) 文件。
+
 ## 📝 待办事项
 
 - [ ] 集成 OpenClaw sessions_history API
 - [ ] 添加飞书告警通知
 - [ ] 支持批量会话分析
 - [ ] 添加 Web UI 界面
+- [ ] 编写完整的单元测试
+- [ ] 添加 CI/CD 流水线
+- [ ] 创建 Docker 镜像
