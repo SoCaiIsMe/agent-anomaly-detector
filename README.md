@@ -1,3 +1,4 @@
+
 # Agent Anomaly Detector Skill
 
 智能体异常轨迹检测 Skill - 使用本地大模型检测智能体行为异常
@@ -347,3 +348,7 @@ detect-anomaly --help
 - [ ] 编写完整的单元测试
 - [ ] 添加 CI/CD 流水线
 - [ ] 创建 Docker 镜像
+=======
+# agent-anomaly-detector
+openclaw integredient for agent anomaly detector
+
