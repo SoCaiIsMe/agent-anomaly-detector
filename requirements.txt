@@ -1,0 +1,26 @@
+# Agent Anomaly Detector - Python 依赖
+
+# 核心依赖
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# 可选：用于 OpenClaw 集成
+# openclaw-sdk>=1.0.0  # 如果 OpenClaw 有官方 SDK
+
+# 可选：用于 JSON 处理
+# json5>=0.9.14  # 支持 JSON5 格式
+
+# 可选：用于命令行参数解析
+# click>=8.1.0
+
+# 可选：用于日志记录
+# structlog>=23.1.0
+
+# 开发依赖（测试、格式化等）
+# pytest>=7.4.0
+# black>=23.0.0
+# flake8>=6.0.0
+# mypy>=1.0.0
+
+# 注意：vLLM 或 Ollama 是外部服务，不需要在这里安装
+# 用户需要单独安装和运行这些服务

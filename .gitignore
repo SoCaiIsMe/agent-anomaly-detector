@@ -1,0 +1,235 @@
+# Agent Anomaly Detector Skill - .gitignore
+
+# ============ Python ============
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# pyenv
+.python-version
+
+# ============ Environment ============
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Personal configuration files
+*.local
+local.*
+secrets.*
+
+# ============ IDE ============
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Other IDEs
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# ============ OS ============
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ============ Logs ============
+# Log files
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# ============ Test Outputs ============
+# Test reports and outputs
+test_output/
+reports/
+*.report.json
+*.test.json
+test-results/
+coverage/
+
+# ============ OpenClaw Specific ============
+# OpenClaw session files (may contain sensitive data)
+sessions/
+agents/
+*.session
+*.session.*
+
+# OpenClaw cache
+.cache/
+.openclaw-cache/
+
+# ============ Model Files ============
+# Large model files (should be downloaded separately)
+*.bin
+*.safetensors
+*.pth
+*.ckpt
+*.pt
+*.h5
+*.onnx
+
+# Model checkpoints
+checkpoints/
+models/
+weights/
+
+# ============ Temporary Files ============
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# ============ Project Specific ============
+# Personal test data (may contain personal info)
+personal_test_data/
+user_data/
+
+# Generated reports
+generated_reports/
+output/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ============ Archives ============
+# Compressed files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ============ Media ============
+# Images
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+
+# Audio/Video
+*.mp3
+*.mp4
+*.wav
+*.avi
+*.mov
+
+# ============ Documents ============
+# Office documents
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.pdf
+
+# ============ Other ============
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# MkDocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/

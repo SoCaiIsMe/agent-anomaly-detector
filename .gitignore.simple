@@ -1,0 +1,57 @@
+# Agent Anomaly Detector - 简化版 .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# Environment
+.env
+.env.local
+*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Test outputs
+test_output/
+reports/
+*.report.json
+
+# OpenClaw
+sessions/
+agents/
+.cache/
+
+# Model files
+*.bin
+*.safetensors
+*.pth
+checkpoints/
+models/
+
+# Temporary
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Personal data
+personal_test_data/
+user_data/
